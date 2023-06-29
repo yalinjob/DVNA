@@ -3,7 +3,8 @@ var vulnDict = require('../config/vulns')
 var authHandler = require('../core/authHandler')
 
 
-//code test example 29/06
+
+//Change test 29/06 
 
 module.exports = function (passport) {
 	router.get('/', authHandler.isAuthenticated, function (req, res) {
