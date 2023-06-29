@@ -18,6 +18,10 @@ module.exports.userSearch = function (req, res) {
 					id: user[0].id
 				}
 			}
+
+           //Code Change 29/06
+
+
 			res.render('app/usersearch', {
 				output: output
 			})
