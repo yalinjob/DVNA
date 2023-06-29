@@ -2,6 +2,9 @@ var router = require('express').Router()
 var vulnDict = require('../config/vulns')
 var authHandler = require('../core/authHandler')
 
+
+//code test example 29/06
+
 module.exports = function (passport) {
 	router.get('/', authHandler.isAuthenticated, function (req, res) {
 		res.redirect('/learn')
@@ -28,6 +31,9 @@ module.exports = function (passport) {
 			}
 		})
 	})
+
+
+
 
 	router.get('/learn', authHandler.isAuthenticated, function (req, res) {
 		res.render('learn',{vulnerabilities:vulnDict})
